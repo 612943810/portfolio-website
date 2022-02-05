@@ -1,9 +1,49 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Prompt:wght@100&display=swap');
+:root{
+  --icterine: #f7f052ff;
+--cyan-process: #5bc0ebff;
+--spanish-green: #28965aff;
+--indigo-dye: #033f63ff;
+--red-salsa: #f8333cff;
 }
 
 
+body{
+display: grid;
+grid: repeat(1fr/span 12)/repeat(1fr/span 12); 
+}
+.navbar{
+    grid-row: 1/2;
+    grid-column: 1/12;
+    background-color:var(--icterine);
+    
+}
+.menuItems{
 
+      display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+      text-decoration: none;
+}
+nav .menuItems {
+  list-style: none;
+}
+
+nav .menuItems   li a{
+  text-decoration: none;
+  font-family:'Press Start 2P','cursive';
+}
+
+nav .menuItems   li a:hover{
+color: var(--spanish-green);
+}
+
+.biography{
+  grid-row: 3/6;
+  grid-column: 1/12;
+  background-color:var(--cyan-process) ;
+  font-family: 'Prompt','sans-serif';
+}
 
