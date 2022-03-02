@@ -11,11 +11,11 @@
 
 body{
 display: grid;
-grid: repeat(1fr/span 12)/repeat(1fr/span 12); 
+grid: repeat(12,1fr)/repeat(12,1fr); 
 }
 .navbar{
-    grid-row: 1/2;
-    grid-column: 1/12;
+    grid-row: 1/ 2;
+    grid-column: 1/ span 12;
     background-color:var(--icterine);
     
 }
@@ -39,10 +39,19 @@ nav .menuItems   li a{
 nav .menuItems   li a:hover{
 color: var(--spanish-green);
 }
+.profilePicture{
+
+background-size:contain;
+grid-row:3/4;
+grid-column: 1/span 12;
+width: 100%;
+height: 50%;
+
+}
 
 .biography{
-  grid-row: 3/6;
-  grid-column: 1/12;
+  grid-row: 10/12;
+  grid-column: 1/span 12;
   background-color:var(--cyan-process) ;
   font-family: 'Prompt','sans-serif';
 }
