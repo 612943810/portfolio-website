@@ -55,4 +55,27 @@ height: 50%;
   background-color:var(--cyan-process) ;
   font-family: 'Prompt','sans-serif';
 }
+.heroText{
+  font-family: 'Prompt','sans-serif';
+  grid-row: 3/4;
+  grid-column: 1/span 12;
+}
+.heroButton{
+width: 100%;
+height: 50%;
+grid-row:3/4;
+grid-column:6/span 2;
+box-shadow: 6px 6px 20px green;
+background-image: linear-gradient(78deg,var(--indigo-dye), var(--cyan-process) ,var(--spanish-green));
+}
 
+.heroBackground{
+  background-color: var(--red-salsa);
+grid-row: 4/8;
+grid-column:5/span 4;
+text-align: center;
+}
+
+.color{
+  background-color: var(--icterine);
+}
