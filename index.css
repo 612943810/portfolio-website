@@ -49,12 +49,7 @@ height: 50%;
 
 }
 
-.biography{
-  grid-row: 10/12;
-  grid-column: 1/span 12;
-  background-color:var(--cyan-process) ;
-  font-family: 'Prompt','sans-serif';
-}
+
 .heroText{
   font-family: 'Prompt','sans-serif';
   grid-row: 3/4;
@@ -71,11 +66,18 @@ background-image: linear-gradient(78deg,var(--indigo-dye), var(--cyan-process) ,
 
 .heroBackground{
   background-color: var(--red-salsa);
-grid-row: 4/8;
+grid-row: 4/5;
 grid-column:5/span 4;
 text-align: center;
 }
 
 .color{
-  background-color: var(--icterine);
+  background-color: var(--indigo-dye);
+}
+.biography{
+  grid-row: 10/12;
+  grid-column: 6/span 6;
+  background-color:var(--cyan-process) ;
+  font-family: 'Prompt','sans-serif';
+  padding: 6%;
 }
