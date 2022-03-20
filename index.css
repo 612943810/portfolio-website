@@ -42,6 +42,7 @@ color: var(--spanish-green);
 
 
 .heroText{
+  color: var(--red-salsa);
   font-family: 'Prompt','sans-serif';
   grid-row: 3/4;
   grid-column: 1/span 12;
