@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Prompt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
   --icterine: #f7f052ff;
 --cyan-process: #5bc0ebff;
@@ -8,20 +7,20 @@
 --red-salsa: #f8333cff;
 }
 
-
 body{
-display: grid;
-grid: auto/repeat(12,1fr); 
+  display: grid;
+  grid: auto/repeat(12,1fr); 
+  background-color: var(--icterine);
 }
+
 .navbar{
     grid-row: 1/2;
     grid-column: 1/ span 12;
-    background-color:var(--icterine);
     
 }
 .menuItems{
 
-      display: flex;
+    display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
@@ -31,56 +30,140 @@ nav .menuItems {
   list-style: none;
 }
 
-nav .menuItems   li a{
-  text-decoration: none;
-  font-family:'Press Start 2P','cursive';
+nav .menuItems a{
+  float: left;
+  font-family: 'Aleo','serif';
+  font-size: x-large;
+font-weight: bold;
+text-align: center;
+max-width: 25%;
+margin: 2%;
 }
 
-nav .menuItems   li a:hover{
+nav .menuItems a:hover{
 color: var(--spanish-green);
 }
-
-
-.heroText{
-  color: var(--red-salsa);
-  font-family: 'Prompt','sans-serif';
-  grid-row: 3/4;
-  grid-column: 1/span 12;
+.mainImage {
+  grid-row: 2/3; 
+  grid-column:1/ 6;
+  text-align: right;
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 50%;
+  margin: auto; 
 }
 
-
-.heroBackground{
-  background-image:url('./images/mypicture.jpg');
-grid-row: 2/4;
-grid-column:1/span 12;
+.biography{
+    grid-row: 2/3;
+  grid-column: 6/12;
+  color: var(--red-salsa);
+  font-family: 'Aleo','serif';
+  font-size: x-large;
+font-weight: bold;
+margin-top: 40%;
 text-align: center;
+justify-content: center;
+}
+.heroMotto{
+  grid-row: 3/4;
+grid-column: 5/8;
+color: var(--red-salsa);
+font-family: 'Aleo','serif';
+font-size: x-large;
+font-weight: bold;
 
 }
 .heroButton{
-padding: 8%;
-grid-row:3/4;
-grid-column:6/span 2;
+  grid-row: 4/5;
+  grid-column: 5/8;
+  padding: 2%;
+  border-radius: 2%;
+  background-color: var(--indigo-dye);
+  color: var(--icterine);
+  font-family: 'Aleo','serif';
+  font-size: medium;
 box-shadow: 6px 6px 20px green;
 background-image: linear-gradient(78deg,var(--indigo-dye), var(--cyan-process) ,var(--spanish-green));
 }
-.color{
-  background-color: var(--indigo-dye);
+ul{
+  list-style-type: none;
 }
-.biography{
-  grid-row:4/5;
-  grid-column: 7/span 6;
-  background-color:var(--cyan-process) ;
-  font-family: 'Prompt','sans-serif';
- padding: 6%;
-}
-.workExperience{
+.myExperience{
   grid-row:5/6;
-  grid-column: 1/span 6;
-  background-color:var(--spanish-green) ;
-  font-family: 'Prompt','sans-serif';
+  grid-column: 5/8;
+  font-family: 'Aleo','serif';
+  font-size: medium;
   padding: 6%;
+  justify-content: center;
+  text-align: center;
   
 }
+.mySkills  {
+  grid-row:6/7;
+  grid-column: 5/8;
+  font-family: 'Aleo','serif';
+  color: var(--indigo-dye);
+  font-size: medium;
+  padding: 6%;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--cyan-process);
+  
+}
+.myProjects{
+   grid-row:7/8;
+  grid-column: 5/8 ;
+    justify-content: center;
+    font-family: 'Aleo','serif';
+    font-size: medium;
+}
+
+.myCards {
+    background-color: var(--cyan-process);
+    border: 1px solid white;
+    font-family: 'Aleo','serif';
+    color: var(--indigo-dye);
+    font-size: medium;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.card h4 {
+    margin-top: 0;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.myContact{
+  grid-row:8/9;
+  grid-column: 1/12;
+  font-family: 'Aleo','serif';
+  font-size: medium;
+  padding: 6%;
+  justify-content: center;
+  text-align: center;
+}
+
+/*
+
+
+
+
+
+
+
+
+
 .academicCredentials{
   grid-row:6/7;
   grid-column: 7/span 6;
@@ -102,4 +185,4 @@ a{
 button{
   background-color: var(--indigo-dye);
   text-decoration: none;
-}
+} */
