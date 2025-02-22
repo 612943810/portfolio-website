@@ -91,11 +91,14 @@ ul{
 .myExperience{
   grid-row:5/6;
   grid-column: 5/8;
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Aleo','serif';
   font-size: medium;
   padding: 6%;
   justify-content: center;
   text-align: center;
+  box-shadow: 10% 10% red;
   
 }
 .mySkills  {
