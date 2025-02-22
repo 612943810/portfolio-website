@@ -113,6 +113,17 @@ ul{
   background-color: var(--cyan-process);
   
 }
+.button{
+  background-color: var(--spanish-green);
+  color: var(--icterine);
+  font-family: 'Aleo','serif';
+  font-family: 'Aleo','serif';
+  font-size: large;
+  border-radius: 45%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  text-align: center;
+}
 .myProjects{
    grid-row:7/8;
   grid-column: 5/8 ;
@@ -156,36 +167,3 @@ ul{
   justify-content: center;
   text-align: center;
 }
-
-/*
-
-
-
-
-
-
-
-
-
-.academicCredentials{
-  grid-row:6/7;
-  grid-column: 7/span 6;
-  background-color:var(--red-salsa) ;
-  font-family: 'Prompt','sans-serif';
-  padding: 6%;
-}
-.professionalSummary{
-  grid-row:7/8;
-  grid-column: 1/span 6;
-  background-color:var(--icterine) ;
-  font-family: 'Prompt','sans-serif';
-  padding: 6%;
-}
-a{
-  color:var(--cyan-process) ;
-  text-decoration: none;
-}
-button{
-  background-color: var(--indigo-dye);
-  text-decoration: none;
-} */
