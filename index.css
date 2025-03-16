@@ -1,20 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
  :root{
-   --icterine: #f7f052ff;
- --cyan-process: #5bc0ebff;
- --spanish-green: #28965aff;
- --indigo-dye: #033f63ff;
- --red-salsa: #f8333cff;
+  --primary: #196d5e;
+  --primary-content: #9de8db;
+  --primary-dark: #0f433a;
+  --primary-light: #239682;
+  
+  --secondary: #34196d;
+  --secondary-content: #b59de8;
+  --secondary-dark: #200f43;
+  --secondary-light: #482396;
+  
+  --background: #eaf5f3;
+  --foreground: #fafdfc;
+  --border: #d4eae6;
+  
+  --copy: #19342f;
+  --copy-light: #428a7d;
+  --copy-lighter: #64b4a6;
+  
+  --success: #196d19;
+  --warning: #6d6d19;
+  --error: #6d1919;
+  --success-content: #9de89d;
+  --warning-content: #e8e89d;
+  --error-content: #e89d9d;
  }
  
  body{
    display: grid;
    grid: auto/repeat(12,1fr); 
-   background-color: var(--icterine);
+   background-color: var(--background);
  }
  
  .navbar{
-  background-color: var(--red-salsa);
+  background-color: var(--primary);
   position:sticky;
   top: 0;
      grid-row: 1/2;
@@ -34,6 +53,7 @@
  }
  
  nav .menuItems a{
+  color: var(--primary-content);
    float: left;
    font-family: 'Aleo','serif';
    font-size: x-large;
@@ -44,44 +64,44 @@
  }
  
  nav .menuItems a:hover{
- color: var(--spanish-green);
+ color: var(--copy-lighter);
  }
  .mainImage {
    grid-row: 2/3; 
    grid-column:1/ 6;
    text-align: right;
-   max-width: 70%;
-   max-height: 70%;
+   width: 60%;
+   height: 60%; 
    border-radius: 50%;
    margin: auto; 
  }
  
  .biography{
      grid-row: 2/3;
-   grid-column: 6/12;
-   color: var(--red-salsa);
+   grid-column: 6/12; 
+   color: var(--copy);
    font-family: 'Aleo','serif';
    font-size: x-large;
  font-weight: bold;
  margin-top: 40%;
  text-align: center;
  justify-content: center;
+
  }
  .heroMotto{
    grid-row: 3/4;
  grid-column: 5/8;
- color: var(--red-salsa);
+ color: var(--copy);
  font-family: 'Aleo','serif';
  font-size: x-large;
  font-weight: bold;
- 
  }
  .heroButton{
    grid-row: 4/5;
    grid-column: 5/8;
    padding: 2%;
    border-radius: 2%;
-   background-color: var(--indigo-dye);
+   background-color: var(--chefchaouen-blue);
    color: var(--icterine);
    font-family: 'Aleo','serif';
    font-size: medium;
@@ -113,7 +133,7 @@
    padding: 6%;
    justify-content: center;
    text-align: center;
-   background-color: var(--cyan-process);
+   background-color: var(--c);
  
  }
  .myProjects{
