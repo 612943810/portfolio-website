@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raiyan Rofiquzzaman Portfolio</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./index.css">
+    <title>Raiyan Rofiquzzaman - Portfolio</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-
-<body class="color">
+<body>
     <nav class="navbar">
+        <a href="#" class="logo">Raiyan</a>
         <ul class="menuItems">
-            <li><a href="#myExperience">Experience</a></li>
-            <li><a href="#myProjects">Projects</a></li>
-            <li><a href="#contactMe">Contact Me</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
-    <img src="/images/mypicture.jpg" alt="Raiyan Rofiquzzaman" class="mainImage">
-
-    <section class="biography">
-        <h2>About me</h2>
-        <p>My name is Raiyan Rofiquzzaman and I am a budding software developer. I live and breathe code every day. I have a strong knack for web development, and I enjoy learning about emerging technologies.
-             My expertise lies in React and Express applications, but I am continuously learning new frameworks to expand my skillset.I know relational databases like MySQL and Oracle and non-relational databases like MongoDB. I am also familar with Amazon
-            AWS and Microsoft Azure. </p>
-        <h2 class="heroMotto">"To learn is to strive"</h2>
-        <button class="heroButton">Learn More</button>
-    </section>
-
-        <div class="mySkills">
-            <h3>Skills</h3>
-         
-                <button class="button">React</button>
-                <button class="button">Express</button>
-                <button class="button">Node</button>               
-                <button class="button">HTML</button>
-                <button class="button">CSS</button>
-                <button class="button">JavaScript</button>
-                <button class="button">MySQL</button>
-                <button class="button">Oracle</button>
-                <button class="button">MongoDB</button>
-                <button class="button">Amazon AWS</button>
-                <button class="button">Microsoft Azure</button>
-        </div>
-    
-        </div>
-
-    <section id="myProjects" class="myProjects">
-        <h2>Projects</h2>
-        <div class="myCards">
-            <div class="card">
-                <h4>Mind-Sam</h4>
-                <p>A made-up app to keep you busy when you are bored by providing inventory for store owners and entertainment for customers.</p>
-                <a href="https://github.com/612943810/mind-sam">View on GitHub</a>
-            </div>
+    <section class="hero">
+        <img src="/images/mypicture.jpg" alt="Raiyan Rofiquzzaman" class="heroImage">
+        <div class="heroText">
+            <h1>Raiyan Rofiquzzaman</h1>
+            <h2>Software Developer</h2>
+            <p>My name is Raiyan Rofiquzzaman and I am a budding software developer. I live and breathe code every day. I have a strong knack for web development, and I enjoy learning about emerging technologies.
+                My expertise lies in React and Express applications, but I am continuously learning new frameworks to expand my skillset.I know relational databases like MySQL and Oracle and non-relational databases like MongoDB. I am also familar with Amazon
+               AWS and Microsoft Azure. </p>
+            <button class="heroButton">Learn More</button>
         </div>
     </section>
+
+    <section class="mySkills">
+        <h2>My Skills</h2>
+        <div class="skillsContainer">
+        <button class="button">HTML</button>
+        <button class="button">CSS</button>
+        <button class="button">JavaScript</button>
+        <button class="button">React</button>
+        <button class="button">Node.js</button>
+        <button class="button">Express.js</button>
+        <button class="button">MongoDB</button>
+        <button class="button">MySQL</button>
+        <button class="button">AWS</button>
+        <button class="button">Azure</button>
+    </div>
+    </section>
+
+    <section class="myProjects">
+        <h2>My Projects</h2>
+        <div class="projectsContainer">
+        <div class="card">
+            <img src="project1.jpg" alt="Project 1" class="cardImage">
+            <h4>Mind-Sam</h4>
+            <p>A made-up app to keep you busy when you are bored by providing inventory for store owners and entertainment for customers.</p>
+            <p><b>Tech Stack:</b> React, Node, Express, MongoDB</p>
+            <a href="https://github.com/612943810/mind-sam">View on GitHub</a>
+        </div>
+        <div class="card">
+            <img src="project1.jpg" alt="Project 1" class="cardImage">
+            <h4>Mind-Sam</h4>
+            <p>A made-up app to keep you busy when you are bored by providing inventory for store owners and entertainment for customers.</p>
+            <p><b>Tech Stack:</b> React, Node, Express, MongoDB</p>
+            <a href="https://github.com/612943810/mind-sam">View on GitHub</a>
+        </div>
+        <div class="card">
+            <img src="project1.jpg" alt="Project 1" class="cardImage">
+            <h4>Mind-Sam</h4>
+            <p>A made-up app to keep you busy when you are bored by providing inventory for store owners and entertainment for customers.</p>
+            <p><b>Tech Stack:</b> React, Node, Express, MongoDB</p>
+            <a href="https://github.com/612943810/mind-sam">View on GitHub</a>
+        </div>
+        </div>
+    </section>
+    <section class="myContact">
+        <h2>Contact Me</h2>
+        <p>Contact information goes here</p>
+    </section>
+
+    <script src="index.js"></script>
 </body>
-<footer class="myContact" id="contactMe">
-    <h2>Contact Me</h2>
-    <p>Email: raiyanrofiquizzaman@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/raiyan-rofiquzzaman/">linkedin.com/in/raiyanrofiquzzaman</a></p>
-</footer>
 </html>
