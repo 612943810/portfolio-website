@@ -57,7 +57,7 @@
  }
  
  nav .menuItems a{
-  color: var(--primary-light);
+  color: var(--primary-dark);
    float: left;
    font-family: 'Aleo','serif';
    font-size: small;
@@ -117,21 +117,8 @@ nav .menuItems a.scrolled{
  ul{
    list-style-type: none;
  }
- .myExperience{
-   grid-row:5/6;
-   grid-column: 5/8;
-   display: flex;
-   flex-wrap: wrap;
-   font-family: 'Aleo','serif';
-   font-size: medium;
-   padding: 6%;
-   justify-content: center;
-   text-align: center;
-   box-shadow: 10% 10% red;
- 
- }
  .mySkills  {
-   grid-row:6/7;
+   grid-row:5/7;
    grid-column: 5/8;
    font-family: 'Aleo','serif';
    color: var(--indigo-dye);
@@ -140,6 +127,10 @@ nav .menuItems a.scrolled{
    justify-content: center;
    text-align: center;
    background-color: var(--c);
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap; 
+   gap: 10px; 
  
  }
  .myProjects{
@@ -175,7 +166,16 @@ nav .menuItems a.scrolled{
  .card a:hover {
      text-decoration: underline;
  }
- 
+ .buttons{
+  background-color: var(--primary-light); 
+  border: none;
+  color: var(--foreground);
+  padding: 2% 8%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: small;
+ }
  .myContact{
    grid-row:8/9;
    grid-column: 1/12;
