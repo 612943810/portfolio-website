@@ -57,7 +57,7 @@
  }
  
  nav .menuItems a{
-  color: var(--primary-dark);
+  color: var(--primary-content);
    float: left;
    font-family: 'Aleo','serif';
    font-size: small;
@@ -76,8 +76,8 @@ nav .menuItems a.scrolled{
    grid-row: 2/3; 
    grid-column:1/ 6;
    text-align: right;
-   width: 60%;
-   height: 60%; 
+   width: 40%;
+   height: 40%; 
    border-radius: 50%;
    margin: auto; 
  }
@@ -126,13 +126,28 @@ nav .menuItems a.scrolled{
    padding: 6%;
    justify-content: center;
    text-align: center;
-   background-color: var(--c);
    display: flex; 
    flex-direction: row;
-   flex-wrap: wrap; 
    gap: 10px; 
  
  }
+.mySkills .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: none;
+  background-color: var(--primary-light);
+} 
+.mySkills .buttons img {
+  width: 90px; 
+  height: 50px;
+  object-fit: contain; 
+  padding: 5px;
+}
+
+
  .myProjects{
     grid-row:7/8;
    grid-column: 5/8 ;
@@ -165,16 +180,6 @@ nav .menuItems a.scrolled{
  
  .card a:hover {
      text-decoration: underline;
- }
- .buttons{
-  background-color: var(--primary-light); 
-  border: none;
-  color: var(--foreground);
-  padding: 2% 8%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: small;
  }
  .myContact{
    grid-row:8/9;
