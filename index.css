@@ -61,8 +61,8 @@ nav .menuItems a:hover {
   grid-row: 2 / 6;
   grid-column: 1 / 9;
   text-align: right;
-  width: 60%;
-  height: 60%;
+  max-width: 60%;
+  max-height: 60%;
   border-radius: 50%;
   margin: auto;
 }
@@ -74,7 +74,7 @@ nav .menuItems a:hover {
   font-family: 'Aleo', 'serif';
   font-size: x-large;
   font-weight: bold;
-  margin-top: 40%;
+  margin-top: 10vh;
   text-align: center;
   justify-content: center;
 }
@@ -144,7 +144,6 @@ background-color: var(--copy-lighter);
 .myProjects {
   grid-row: 7 / 8;
   grid-column: 1 / 12;
-
   justify-content: center;
   font-family: 'Aleo', 'serif';
   font-size: medium;
@@ -224,4 +223,98 @@ background-color: var(--primary-content);
 }
 .githubLink .buttons:hover {
 background-color: var(--copy-lighter);
+}
+
+/* Small Screens (Mobile)*/
+@media (max-width: 576px) {
+  .mainImage {
+    grid-row: 2/3;
+    grid-column: 1 / 12;
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+  }
+
+  .biography {
+    grid-row: 3 / 4;
+    grid-column: 1 / 12;
+    margin-top: 5vh;
+    font-size: large;
+  }
+
+  .heroMotto {
+    grid-column: 1 / 12;
+    grid-row: 4/5;
+    font-size: large;
+    text-align: center;
+  }
+
+  .heroButton {
+    grid-column: 1 / 12;
+    grid-row: 5/6;
+    text-align: center;
+  }
+
+  .mySkills {
+    padding: 2%;
+    gap: 5px;
+  }
+
+  .myCards > div {
+    flex-basis: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  .githubLink {
+    grid-column: 1/12;
+  }
+  .menuItems{
+    justify-content: center;
+  }
+}
+
+/* Medium Screens (Tablet)*/
+@media (min-width: 577px) and (max-width: 992px) {
+  .mainImage {
+    grid-column: 1 / 8;
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  .biography {
+    grid-column: 8 / 12;
+    margin-top: 8vh;
+    font-size: x-large;
+  }
+
+  .heroMotto {
+    grid-column: 4 / 9;
+    font-size: x-large;
+  }
+
+  .heroButton {
+    grid-column: 4 / 9;
+  }
+
+  .mySkills {
+    padding: 4%;
+  }
+
+  .myCards > div {
+    flex-basis: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  .githubLink {
+    grid-column: 5/9;
+  }
+}
+
+/* Large Screens (Desktop)*/
+@media (min-width: 993px) {
+  .myCards > div {
+    flex-basis: calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+  }
+  .githubLink {
+    grid-column: 6/8;
+  }
 }
