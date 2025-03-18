@@ -76,8 +76,8 @@ nav .menuItems a.scrolled{
    grid-row: 2/6; 
    grid-column:1/ 9;
    text-align: right;
-   width: 80%;
-   height: 80%; 
+   width: 60%;
+   height: 60%; 
    border-radius: 50%;
    margin: auto; 
  }
@@ -97,7 +97,7 @@ nav .menuItems a.scrolled{
  .heroMotto{
    grid-row: 3/4;
  grid-column: 5/8;
- color: var(--copy);
+ color: var(--secondary-content);
  font-family: 'Aleo','serif';
  font-size: x-large;
  font-weight: bold;
@@ -165,7 +165,7 @@ nav .menuItems a.scrolled{
      border-radius: 8px;
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
      padding: 20px;
-     width: 200px;
+     width: 600px;
      text-align: center;
  }
  
@@ -180,6 +180,12 @@ nav .menuItems a.scrolled{
  
  .myCards a:hover {
      text-decoration: underline;
+ }
+ .myCards img{
+  width: 100%;
+ }
+ .emoji{
+  font-size: 100px;
  }
  .myContact{
    grid-row:8/9;
