@@ -131,6 +131,9 @@ ul {
   border: none;
   background-color: var(--primary-content);
 }
+.mySkills .buttons:hover {
+background-color: var(--copy-lighter);
+}
 .mySkills .buttons img {
   width: 90px;
   height: 50px;
@@ -198,11 +201,27 @@ ul {
   font-size: 100px;
 }
 .myContact {
-  grid-row: 10 / 12;
+  grid-row: 10 / 11;
   grid-column: 1 / 12;
   font-family: 'Aleo', 'serif';
   font-size: medium;
   padding: 6%;
   justify-content: center;
   text-align: center;
+}
+.githubLink {
+  grid-row: 11/12;
+  grid-column: 6/ 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: none;
+}
+.githubLink .buttons{
+background-color: var(--primary-content);
+}
+.githubLink .buttons:hover {
+background-color: var(--copy-lighter);
 }
