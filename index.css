@@ -166,10 +166,10 @@ ul {
   justify-content: center;
 }
 .myCards > div {
-  flex-basis: calc(33.33% - 10px);
+  flex-basis: calc(20% - 10px);
   flex-grow: 1;
   flex-shrink: 1;
-  max-width: calc(33.33% - 10px);
+  max-width: calc(20% - 10px);
   display: flex;
   flex-direction: column;
   border-radius: 8px;
