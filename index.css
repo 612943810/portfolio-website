@@ -117,9 +117,13 @@ nav .menuItems a.scrolled{
  ul{
    list-style-type: none;
  }
+ .newLine{
+  flex-basis: 100%;
+  width: 0;
+ }
  .mySkills  {
    grid-row:6/7;
-   grid-column: 5/8;
+   grid-column: 1/8;
    font-family: 'Aleo','serif';
    color: var(--indigo-dye);
    font-size: medium;
@@ -128,6 +132,7 @@ nav .menuItems a.scrolled{
    text-align: center;
    display: flex; 
    flex-direction: row;
+   flex-wrap: wrap;
    gap: 10px; 
  
  }
