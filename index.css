@@ -125,7 +125,7 @@ nav .menuItems a.scrolled{
    grid-row:6/7;
    grid-column: 1/8;
    font-family: 'Aleo','serif';
-   color: var(--indigo-dye);
+   color: var(--copy-light);
    font-size: medium;
    padding: 6%;
    justify-content: center;
@@ -143,7 +143,7 @@ nav .menuItems a.scrolled{
   justify-content: center;
   margin: 10px;
   border: none;
-  background-color: var(--primary-light);
+  background-color: var(--primary-content);
 } 
 .mySkills .buttons img {
   width: 90px; 
