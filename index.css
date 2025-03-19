@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --primary: #196d5e;
   --primary-content: #9de8db;
@@ -37,6 +38,7 @@ body {
   gap: 5%;
   flex-wrap: wrap;
 }
+
 nav .menuItems {
   list-style: none;
 }
@@ -50,6 +52,7 @@ nav .menuItems a {
   text-align: left;
   transition: color 0.3s ease;
 }
+
 nav .menuItems a.scrolled {
   color: var(--background);
 }
@@ -57,6 +60,7 @@ nav .menuItems a.scrolled {
 nav .menuItems a:hover {
   color: var(--copy-lighter);
 }
+
 .mainImage {
   grid-row: 2 / 6;
   grid-column: 1 / 7;
@@ -78,6 +82,7 @@ nav .menuItems a:hover {
   text-align: center;
   justify-content: center;
 }
+
 .heroMotto {
   grid-row: 3 / 4;
   grid-column: 5 / 8;
@@ -86,28 +91,33 @@ nav .menuItems a:hover {
   font-size: x-large;
   font-weight: bold;
 }
+
 .heroButton {
   grid-row: 4 / 5;
   grid-column: 5 / 8;
   padding: 2%;
   border-radius: 2%;
- background-color: transparent;
+  background-color: transparent;
   color: var(--secondary-content);
   font-family: 'Aleo', 'serif';
   font-size: medium;
   box-shadow: 6px 6px 20px green;
-  background-image: linear-gradient(78deg, transparent, transparent,transparent);
+  background-image: linear-gradient(78deg, transparent, transparent, transparent);
 }
-a .heroButton:hover{
+
+a .heroButton:hover {
   text-decoration: underline;
 }
+
 ul {
   list-style-type: none;
 }
+
 .newLine {
   flex-basis: 100%;
   width: 0;
 }
+
 .mySkills {
   grid-row: 6 / 7;
   grid-column: 1 / 12;
@@ -122,6 +132,7 @@ ul {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .mySkills .buttons {
   display: flex;
   flex-direction: column;
@@ -131,9 +142,11 @@ ul {
   border: none;
   background-color: var(--primary-content);
 }
+
 .mySkills .buttons:hover {
-background-color: var(--copy-lighter);
+  background-color: var(--copy-lighter);
 }
+
 .mySkills .buttons img {
   width: 90px;
   height: 50px;
@@ -158,7 +171,6 @@ background-color: var(--copy-lighter);
 
   font-family: 'Aleo', 'serif';
   font-size: medium;
-
   width: auto;
   text-align: center;
   display: flex;
@@ -167,11 +179,10 @@ background-color: var(--copy-lighter);
   gap: 10px;
   justify-content: center;
 }
-.myCards > div {
-  flex-basis: calc(20% - 10px);
+
+.myCards>div {
   flex-grow: 1;
   flex-shrink: 1;
-  max-width: calc(20% - 10px);
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -181,6 +192,7 @@ background-color: var(--copy-lighter);
   background-color: var(--foreground);
   border-radius: 8px;
 }
+
 .myCards h4 {
   margin-top: 0;
 }
@@ -193,12 +205,15 @@ background-color: var(--copy-lighter);
 .myCards a:hover {
   text-decoration: underline;
 }
+
 .myCards img {
   width: 100%;
 }
+
 .emoji {
   font-size: 100px;
 }
+
 .myContact {
   grid-row: 10 / 11;
   grid-column: 1 / 12;
@@ -208,6 +223,7 @@ background-color: var(--copy-lighter);
   justify-content: center;
   text-align: center;
 }
+
 .githubLink {
   grid-row: 11/12;
   grid-column: 6/ 8;
@@ -218,11 +234,13 @@ background-color: var(--copy-lighter);
   margin: 10px;
   border: none;
 }
-.githubLink .buttons{
-background-color: var(--primary-content);
+
+.githubLink .buttons {
+  background-color: var(--primary-content);
 }
+
 .githubLink .buttons:hover {
-background-color: var(--copy-lighter);
+  background-color: var(--copy-lighter);
 }
 
 /* Small Screens (Mobile)*/
@@ -260,14 +278,16 @@ background-color: var(--copy-lighter);
     gap: 5px;
   }
 
-  .myCards > div {
+  .myCards>div {
     flex-basis: calc(100% - 10px);
     max-width: calc(100% - 10px);
   }
+
   .githubLink {
     grid-column: 1/12;
   }
-  .menuItems{
+
+  .menuItems {
     justify-content: center;
   }
 }
@@ -299,10 +319,11 @@ background-color: var(--copy-lighter);
     padding: 4%;
   }
 
-  .myCards > div {
-    flex-basis: calc(50% - 10px);
-    max-width: calc(50% - 10px);
+  .myCards>div {
+    flex-basis: calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
   }
+
   .githubLink {
     grid-column: 5/9;
   }
@@ -310,10 +331,11 @@ background-color: var(--copy-lighter);
 
 /* Large Screens (Desktop)*/
 @media (min-width: 993px) {
-  .myCards > div {
-    flex-basis: calc(33.33% - 10px);
-    max-width: calc(33.33% - 10px);
+  .myCards>div {
+    flex-basis: calc(25% - 10px);
+    max-width: calc(25% - 10px);
   }
+
   .githubLink {
     grid-column: 6/8;
   }
