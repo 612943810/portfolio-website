@@ -62,7 +62,7 @@ nav .menuItems a:hover {
 }
 
 .mainImage {
-  grid-row: 2 / 6;
+  grid-row: 2 / 4;
   grid-column: 1 / 7;
   text-align: right;
   max-width: 60%;
@@ -117,7 +117,39 @@ ul {
   flex-basis: 100%;
   width: 0;
 }
+.myExperience {
+  grid-row: 5 / 6;
+  grid-column: 1 / 12;
+  font-family: 'Aleo', 'serif';
+  color: var(--copy-light);
+  font-size: medium;
+  padding: 6%;
+  text-align: center;
+}
 
+.experienceCard {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--foreground);
+  border: 1px solid var(--secondary-content);
+  text-align: left;
+}
+
+.experienceCard h3 {
+  margin-top: 0;
+  color: var(--secondary);
+}
+
+.experienceCard p {
+  margin: 5px 0;
+}
+
+.experienceCard ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
 .mySkills {
   grid-row: 6 / 7;
   grid-column: 1 / 12;
@@ -243,7 +275,8 @@ ul {
   background-color: var(--copy-lighter);
 }
 
-/* Small Screens (Mobile)*/
+
+
 @media (max-width: 576px) {
   .mainImage {
     grid-row: 2/3;
@@ -292,7 +325,6 @@ ul {
   }
 }
 
-/* Medium Screens (Tablet)*/
 @media (min-width: 577px) and (max-width: 992px) {
   .mainImage {
     grid-column: 1 / 8;
@@ -329,7 +361,6 @@ ul {
   }
 }
 
-/* Large Screens (Desktop)*/
 @media (min-width: 993px) {
   .myCards>div {
     flex-basis: calc(25% - 10px);
