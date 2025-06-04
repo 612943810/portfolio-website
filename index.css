@@ -1,3 +1,15 @@
+/*
+  index.css - Portfolio Website Main Stylesheet
+  Author: Raiyan Rofiquzzaman
+  Description: This file contains the main styles for the portfolio website, including layout, typography, color variables, responsive design, and component-specific styles.
+*/
+
+/*
+  =====================
+  Color Variables
+  =====================
+  Define CSS custom properties for consistent color theming across the site.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -13,12 +25,24 @@
   --copy-lighter: #64b4a6;
 }
 
+/*
+  =====================
+  Layout & Typography
+  =====================
+  Set up the main grid layout and base font styles for the site.
+*/
 body {
   display: grid;
   grid: auto / repeat(12, 1fr);
   background-color: var(--background);
 }
 
+/*
+  =====================
+  Navigation Bar
+  =====================
+  Styles for the top navigation bar and menu items.
+*/
 .navbar {
   background-color: var(--primary);
   opacity: 0.7;
@@ -61,6 +85,12 @@ nav .menuItems a:hover {
   color: var(--copy-lighter);
 }
 
+/*
+  =====================
+  Hero Section
+  =====================
+  Styles for the main image, biography, motto, and hero button.
+*/
 .mainImage {
   grid-row: 2 / 4;
   grid-column: 1 / 7;
@@ -109,6 +139,12 @@ a .heroButton:hover {
   text-decoration: underline;
 }
 
+/*
+  =====================
+  Experience Section
+  =====================
+  Styles for the experience section and cards.
+*/
 ul {
   list-style-type: none;
 }
@@ -150,23 +186,28 @@ ul {
   padding-left: 20px;
   list-style-type: disc;
 }
+
+/*
+  =====================
+  Skills Section
+  =====================
+  Styles for the skills section and skill buttons.
+*/
 .mySkills {
+justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
   grid-row: 6 / 7;
   grid-column: 1 / 12;
   font-family: 'Aleo', 'serif';
-  color: var(--copy-light);
   font-size: medium;
+  color: var(--copy-light);
   padding: 6%;
-  justify-content: center;
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .mySkills .buttons {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -185,7 +226,23 @@ ul {
   object-fit: contain;
   padding: 5px;
 }
-
+.skillButtons {
+  display: flex;
+  grid-row: 7/8;
+  grid-column: 1 / 12;
+justify-content: center;
+  font-family: 'Aleo', 'serif';
+  font-size: medium;
+  color: var(--copy-light);
+  padding: 6%;
+  text-align: center;
+}
+/*
+  =====================
+  Projects Section
+  =====================
+  Styles for the projects section and project cards.
+*/
 .myProjects {
   grid-row: 7 / 8;
   grid-column: 1 / 12;
@@ -246,6 +303,12 @@ ul {
   font-size: 100px;
 }
 
+/*
+  =====================
+  Contact Section
+  =====================
+  Styles for the contact section and GitHub link/button.
+*/
 .myContact {
   grid-row: 10 / 11;
   grid-column: 1 / 12;
@@ -275,8 +338,12 @@ ul {
   background-color: var(--copy-lighter);
 }
 
-
-
+/*
+  =====================
+  Responsive Design
+  =====================
+  Media queries for mobile, tablet, and desktop layouts.
+*/
 @media (max-width: 576px) {
   .mainImage {
     grid-row: 2/3;
