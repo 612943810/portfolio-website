@@ -45,44 +45,63 @@ body {
 */
 .navbar {
   background-color: var(--primary);
-  opacity: 0.7;
+  opacity: 0.95;
   position: sticky;
   top: 0;
   grid-row: 1 / 2;
   grid-column: 1 / span 12;
+  z-index: 50;
 }
 
 .menuItems {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: end;
-  margin: 2%;
-  text-decoration: none;
-  gap: 5%;
-  flex-wrap: wrap;
+  justify-content: space-evenly; /* spread links across the navbar */
+  align-items: center; /* center vertically inside the navbar */
+  margin: 0; /* reset default ul margin */
+  padding: 0 1rem; /* horizontal padding inside navbar */
+  gap: 2rem; /* bigger gap between items */
+  flex-wrap: nowrap;
 }
 
 nav .menuItems {
   list-style: none;
 }
 
+nav .menuItems li {
+  list-style: none;
+}
+
 nav .menuItems a {
   color: var(--primary-content);
-  float: left;
+  float: none; /* remove float which conflicts with flex layout */
   font-family: 'Aleo', 'serif';
-  font-size: small;
+  font-size: 1.05rem; /* larger nav text */
   font-weight: bold;
   text-align: left;
   transition: color 0.3s ease;
-}
-
-nav .menuItems a.scrolled {
-  color: var(--background);
+  display: inline-block;
+  padding: 0.75rem 0.5rem; /* more padding for spread and click area */
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 0.35px;
 }
 
 nav .menuItems a:hover {
   color: var(--copy-lighter);
+  background-color: rgba(255,255,255,0.04);
+}
+
+/* Scrolled state for navbar */
+.navbar.scrolled {
+  background-color: var(--secondary);
+  opacity: 0.95;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* When links receive the .scrolled class, make them light on the dark navbar */
+nav .menuItems a.scrolled {
+  color: var(--background);
 }
 
 /*
@@ -225,6 +244,51 @@ justify-content: center;
   height: 50px;
   object-fit: contain;
   padding: 5px;
+}
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+  min-width: 200px;
+}
+
+.skill-group h3 {
+  margin: 0 0 8px 0;
+  color: var(--secondary);
+  font-size: large;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-list .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+}
+
+/* Make groups stack vertically on very small screens */
+@media (max-width: 576px) {
+  .mySkills {
+    flex-direction: column;
+    gap: 16px;
+    padding: 2%;
+  }
+  .skill-group {
+    width: 100%;
+  }
+  .skill-list {
+    justify-content: flex-start;
+  }
 }
 .skillButtons {
   display: flex;
